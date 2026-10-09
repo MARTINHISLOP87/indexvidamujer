@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Mujer - Descarga</title>
+    <style>
+        /* Paleta de colores ROSE reemplazando el morado */
+        :root {
+            --primary-rose: #E11D48; /* Color principal */
+            --primary-rose-hover: #BE123C; /* Color al pasar el mouse */
+            --bg-rose-light: #FFF1F2; /* Fondo claro */
+            --text-dark: #1F2937;
+            --text-gray: #4B5563;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-rose-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación minimalista */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem 5%;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-rose);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        /* Sección principal (Hero) */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%);
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-rose);
+        }
+
+        p.subtitle {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* Botón de Descarga Modificado */
+        .btn-descargar {
+            display: inline-block;
+            background-color: var(--primary-rose);
+            color: white;
+            padding: 16px 45px;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(225, 29, 72, 0.4);
+        }
+
+        .btn-descargar:hover {
+            background-color: var(--primary-rose-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(225, 29, 72, 0.6);
+        }
+
+        /* Sección de diseño inferior */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 20px;
+            background: white;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 12px;
+            background: var(--bg-rose-light);
+            width: 320px;
+            text-align: center;
+            border: 1px solid #FFE4E6;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-rose);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            color: var(--text-gray);
+            border-top: 1px solid #FFE4E6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Vida Mujer</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Tu Acompañamiento en Salud</h1>
+            <p class="subtitle">Gestiona tu bienestar con nuestra aplicación. Todo lo que necesitas está a un solo toque de distancia, ahora con un diseño unificado.</p>
+            
+            <!-- Aquí se cambió "Solicitar Demo" por "Descargar" con el enlace directo al APK -->
+            <a href="https://apptininisk.blob.core.windows.net/app/VidaMujer.apk" class="btn-descargar">
+                Descargar Aplicación
+            </a>
+
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Diseño Optimizado</h3>
+                <p>Interfaz renovada en nuestro color Rose característico para una experiencia más cálida e intuitiva.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Acceso Directo</h3>
+                <p>Instala la aplicación directamente en tu dispositivo móvil sin intermediarios ni demoras.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vida Mujer. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
